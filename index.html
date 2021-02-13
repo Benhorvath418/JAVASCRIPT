@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="shortcut icon" href="kepek/js.png" type="image/png">
+<link rel="stylesheet" href="stilus.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>JS Alapok</title>
+</head>
+<body class="bg-primary bg-gradient">
+    <div class="container container-fluid-sm bg-light bg-gradient mt-1 pt-3">
+        <header>
+            <h2 class="text-center">Mit tud a Javascrpit?</h2>
+            <hr>
+
+        </header>
+    </div>
+    <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementaryById('demo').innerHTML = "'">dátum törlése</button>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+<h3>Javascript megváltoztatja a HTML elemek stílusát.</h3>
+<p id="modositando">Megváltoztathatod a bekezdésed kinézetét</p>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.fontSize='20px'">Betűméret</button>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.color='#0073e5'">Betűszín</button>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.FontFamily='Courier New'">Betűtípus</button>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.border='2px dashed #0073e5'">Szegély</button>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.padding='10px'">Belső margó</button>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.margin='10px'">Külső margó</button>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.backroundColor='rgba(250, 208, 140, 0.2)'">Külső margó</button>
+<p></p>
+<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank"><img class="img-fluid border border-success rounded-circle" src="kepek/w3kicsi.PNG" alt="w3schools oldala" title="Ugrás a W3schools oldalára">
+</a>
+<button class="btn btn-outline-primary btn-sm" type="button" onclick="document.getElementById ('modositando').style.backroundColor='#000000'">Sötét mód</button>
+    <input type="button" value="Sötét mód" onclick="sotet()">
+<p></p>
+<a href="https://www.3schools.com/js/tryit.asp?filename=js_intro_style" target="_blank"><img class="img-fluid border border-success rounded-circle" src="kepek/w3kicsi.PNG" alt="w3schools odlala" title="Ugrás a W3schools oldalára">
+</a>
+<script>
+    function sotetMod(){
+        document.getElementById('oldal').style.backgroundColor="black";
+        document.getElementById('oldal').style.color="white";
+    }
+    function vilMod(){
+        document.getElementById('oldal').style.backgroundColor="white";
+        document.getElementById('oldal').style.color="black";
+    }
+</script>
+
+</body>
+</html>
